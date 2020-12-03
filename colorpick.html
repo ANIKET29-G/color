@@ -1,0 +1,104 @@
+<html>
+<head>
+    <script src="js.js"></script>
+    <style>
+ /*
+Color Reference:
+#333333 - nearly black
+#EEEEEE - off-white
+#FF6347 - "tomato"
+#2E8B57 - "seagreen"
+#4682B4 - "steelblue"
+*/
+
+body {
+	background-color: #333333;
+	transition: background-color .5s;
+	-webkit-transition: background-color .5s; /* for Safari 6.0 */
+}
+
+header {
+	background-color: #EEEEEE;
+
+	width: 670px;
+	margin: 100px auto 0;
+}
+
+h1 {
+	color: #333333;
+	font-family: Courier, monospace;
+	text-align: center;
+	transition: color .5s;
+	-webkit-transition: color .5s; /* for Safari 6.0 */
+
+	padding: 10px;
+}
+
+div.box {
+	background-color: #EEEEEE;
+
+	width: 660px;
+	height: 160px;
+	padding: 10px 5px 10px 5px;
+	margin: 10px auto 100px;
+	border: none;
+}
+
+form.buttons {
+	text-align: center;
+
+	padding: 0;
+	margin: 0;
+}
+
+input.color {
+  -webkit-appearance: none; /* for Safari */
+  -webkit-border-radius: 0; /* for Safari */
+	color: #333333;
+	font-family: Courier, monospace;
+	outline: none;
+	text-align: center;
+
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+	margin: 5px;
+	border: none;
+}
+
+input#black {
+	background-color: #333333;
+}
+
+input#red {
+	background-color: #FF6347;
+}
+
+input#green {
+	background-color: #2E8B57;
+}
+
+input#blue {
+	background-color: #4682B4;
+}
+
+    </style>
+    
+    
+    </head>
+<body>
+    
+  <header>
+	<h1>Select a color.</h1>
+</header>
+<div class="box">
+	<form class="buttons">
+		<input type="button" class="color" id="black" onclick="changeColor('#333');">
+		<input type="button" class="color" id="red" onclick="changeColor('#FF6347');">
+		<input type="button" class="color" id="green" onclick="changeColor('#2E8B57');">
+		<input type="button" class="color" id="blue" onclick="changeColor('#4682B4');">
+	</form>
+</div>
+    </body>
+
+</html>

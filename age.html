@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    
+    <style>
+    /* Global Style*/
+:root {
+  --primary-color: rgb(11, 11, 12);
+  --primary-color-dark: rgb(0, 0, 0);
+  --primary-color-light: rgb(3, 3, 3);
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 62.5%;
+  font-size: normal;
+  line-height: 1.6;
+  background-image: url(bg.jpg);
+}
+
+/* container style*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 85vh;
+}
+
+.heading--1 {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.con__input {
+  font-size: 1.5rem;
+  border: 2px solid var(--primary-color);
+  display: block;
+  margin: 0 auto;
+  color: var(--primary-color-dark);
+}
+
+.con__btn {
+  background: var(--primary-color);
+  border: none;
+  padding: 8px 40px;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.heading--2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  word-spacing: .2rem;
+}
+
+.year,
+.month,
+.day {
+  color: var(--primary-color-dark);
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+@media only screen and (max-height:700px) {
+
+  .heading--1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  .heading--2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--primary-color-light);
+}
+
+.footer__link {
+  color: var(--primary-color);
+}
+        body{
+            background-image: url(green_3-wallpaper-1920x1080.jpg)
+        }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keyword" content="age, calculator, age calculator, javascript age calculator, vanillajs age calculator, simple age calulator">
+  <meta name="description" content="This is a simple age calculator. This app make with HTML, CSS, and vanillajs. You can select your age from input after click the button it show your total age with month and days">
+  <meta name="author" content="emranweb">
+  <title>Age Calculator</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <!-- css -->
+  
+</head>
+
+<body>
+  <!-- age calculator -->
+  <div class="container">
+    <h1 class="heading--1">Age Calculator</h1>
+    <input type="date" name="age" class="con__input">
+    <input type="submit" name="submit button" class="con__btn" value="Calculate">
+    <h2 class="heading--2">
+    </h2>
+  </div>
+  <p class="footer"> ANIKET SINGH </p>
+  <!-- script -->
+ <script src="age,js"></script>
+</body>
+
+</html>
